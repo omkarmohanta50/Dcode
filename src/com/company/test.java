@@ -1,15 +1,24 @@
 package com.company;
 
 public class test {
-
-        public static int subtractProductAndSum(int n) {
-            int ldigit = n%10;
-            return ldigit;
-        }
-
     public static void main(String[] args) {
-            int res = subtractProductAndSum(123);
-        System.out.println(res);
+        fun2(1);
+    }
+    static void fun(int n){
+        if (n == 0)
+            return;
+        //System.out.println(n);
+        fun(n-1);
+        System.out.println(n);
+    }
+    static void fun2( int n){
+        if (n ==5){
+            return;
+        }
+        System.out.println(n);
+        fun2(n+1);
+        //System.out.println(n);
     }
 }
+
 
