@@ -2,23 +2,21 @@ package com.company;
 
 public class test {
     public static void main(String[] args) {
-        fun2(1);
+        System.out.println(prod(2354));
     }
-    static void fun(int n){
-        if (n == 0)
-            return;
-        //System.out.println(n);
-        fun(n-1);
-        System.out.println(n);
-    }
-    static void fun2( int n){
-        if (n ==5){
-            return;
+    static int prod(int n ){
+        if (n % 10 == n){
+            return n;
         }
-        System.out.println(n);
-        fun2(n+1);
-        //System.out.println(n);
+        return (n%10) * prod(n/10);
     }
+    static int count(int n){
+        if (n%10 == 0){
+
+        }
+return 0;
+    }
+
 }
 
 

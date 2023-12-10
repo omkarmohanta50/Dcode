@@ -9,5 +9,6 @@ public class Recursion9 {
         if (n%10== 0)
             return 1;
         return (n%10)*10 + rev(n/10);
+    // not solved completely
     }
 }
