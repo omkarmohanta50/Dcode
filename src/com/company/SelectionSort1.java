@@ -21,4 +21,5 @@ public class SelectionSort1 {
             arr[smallest]= temp;
         }
     }
+
 }
